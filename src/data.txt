@@ -1,0 +1,19 @@
+TypeScript is a superset of JavaScript.
+TypeScript builds on top of JavaScript. First, you write the TypeScript code. 
+Then, you compile the TypeScript code into plain JavaScript code using a TypeScript compiler.
+TypeScript uses the JavaScript syntaxes and adds additional syntaxes for supporting Types.
+Types increase productivity by helping you avoid many mistakes. 
+By using types, you can catch bugs at the compile time instead of having them occur at runtime.
+For example :
+function add(x,y){
+    return x+y;
+}
+let result = add(input1.value, input2.value);
+here we may get the result in form of concatenated stings 
+therefore if we use TypeScript
+function add(x:number,y:number){
+    return x+y;
+}
+we can avoid the error 
+The never type contains no value.
+The never type represents the return type of a function that always throws an error or a function that contains an indefinite loop.
